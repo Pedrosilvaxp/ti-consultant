@@ -4,6 +4,7 @@
 
 :root {
     --fonte1: Arial;
+    --degrade: linear-gradient(to right, var(--cor2), var(--cor1));
     --cor1: white;
     --cor2: #293846;
 }
