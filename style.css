@@ -7,6 +7,7 @@
     --degrade: linear-gradient(to right, var(--cor2), var(--cor1));
     --cor1: white;
     --cor2: #293846;
+    --cor3: #9abedd;
 }
 
 /* BODY */
@@ -131,7 +132,7 @@ section.poster-inicial {
 }
 h2.pedrojr {
     font-size: 4em;
-    color: #9abedd;
+    color: var(--cor3);
 }
 .poster-introduction h3 {
     font-size: 30px;
@@ -193,6 +194,11 @@ a.poster-link:hover {
         padding-top: 0;
     }
 }
+@media (max-width: 860px) {
+    .poster-introduction {
+        text-align: center;
+    }
+}
 @media (max-width: 1005px) {
     .poster-net {
         display: none;
@@ -232,18 +238,42 @@ a.poster-link:hover {
 }
 
 /* Diferenciais */
+section.diferenciais {
+    margin-bottom: 5em;
+}
 .diferenciais article {
-    background: url('imagens/diferenciais.jpg') center center/cover no-repeat;
     padding: 20px;
     height: auto;
+    margin-bottom: 50px;
+}
+article.abordagem {
+    background: url('imagens/abordagem.jpg') center center/cover no-repeat;
+}
+.atualizacao {
+    background: url('imagens/diferenciais.jpg') center center/cover no-repeat;
+}
+.resultados {
+    background: url('imagens/foco.jpg') center top/cover no-repeat;
 }
 .diferenciais p {
-    background-color: rgb(68, 60, 54, 0.1);
+    background-color: rgba(20, 18, 16, 0.521);
     backdrop-filter: blur(6px);
     border-radius: 10px;
     font-size: 19px;
     padding: 10px;
     max-width: 400px;
+}
+.diferenciais h2 {
+    border-bottom: 3px solid var(--cor1);
+    color: var(--cor3);
+    font-size: 2.2em;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+@media (max-width: 400px) {
+    .servicos p, .diferenciais p, .poster-introduction p, .sobre p {
+        font-size: 16px;
+    }
 }
 
 /* Sobre */
@@ -289,6 +319,37 @@ article.container {
     background: rgb(252, 226, 201, 0.2);
 }
 
+/* Newsletter */
+aside.newsletter {
+    margin-bottom: 5em;
+}
+.newsletter h2 {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 40px;
+    border-bottom: inherit;
+}
+.newsletter p {
+    text-align: center;
+}
+input {
+    border: 1px solid var(--cor1);
+    border-radius: 5px 2px 5px 2px;
+    padding: 20px;
+    color: var(--cor1);
+    margin: 4px 0px;
+    background-color: transparent;
+    transition-duration: .4s;
+}
+input#sub {
+    background-color: var(--cor2);
+    font-weight: bold;
+    cursor: pointer;
+}
+#sub:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
 
 /* Texts and tags */
 section {
@@ -297,7 +358,7 @@ section {
 }
 h1 {
     font-size: 2.8em;
-    color: #9abedd;
+    color: var(--cor3);
     border-bottom: 3px solid var(--cor1);
     max-width: 1000px;
     min-width: auto;
