@@ -270,11 +270,6 @@ article.abordagem {
     max-width: 500px;
     margin-bottom: 20px;
 }
-@media (max-width: 400px) {
-    .servicos p, .diferenciais p, .poster-introduction p, .sobre p {
-        font-size: 16px;
-    }
-}
 
 /* Sobre */
 section.sobre {
@@ -317,6 +312,12 @@ article.container {
 }
 #back-button:active {
     background: rgb(252, 226, 201, 0.2);
+}
+
+@media (max-width: 400px) {
+    .servicos p, .diferenciais p, .poster-introduction p, .sobre p {
+        font-size: 16px;
+    }
 }
 
 /* Texts and tags */
